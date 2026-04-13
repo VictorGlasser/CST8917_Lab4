@@ -47,7 +47,7 @@ GET {{baseUrl}}/get-audit-log
 ### -----------------------------------------------------------------------
 
 ### Update this URL to your deployed function app
-# @deployedUrl = https://yourname-photopipe-func.azurewebsites.net/api
+@deployedUrl = https://victor-photopipe-func2.azurewebsites.net/api
 
 # GET {{deployedUrl}}/get-results
 
