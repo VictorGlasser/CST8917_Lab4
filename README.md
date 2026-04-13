@@ -11,6 +11,7 @@ Video Demo: https://youtu.be/5ovLSVULxk4
 - Ensure that **Allow Blob anonymous access** is set it to **Enabled**
 - Create blob containers named `image-uploads` and `image results`
 - Configure CORS for the storage account with the following rule:
+
 | Field | Value |
 |-------|-------|
 | **Allowed origins** | `*` |
@@ -18,8 +19,10 @@ Video Demo: https://youtu.be/5ovLSVULxk4
 | **Allowed headers** | `*` |
 | **Exposed headers** | `*` |
 | **Max age** | `3600` |
+
 - Create an event grid system topic
 - Create the first subscription in your Event Grid System Topic:
+
 | Field | Value |
 |-------|-------|
 | **Name** | `process-image-sub` |
@@ -69,6 +72,7 @@ python -m pip install -r requirements.txt
 ```
 
 - Deploy Function App to Azure
+
 | Prompt | Your Action |
 |--------|-------------|
 | **Enter a globally unique name** | e.g., `yourname-photopipe-func` |
